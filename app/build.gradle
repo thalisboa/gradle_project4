@@ -34,6 +34,7 @@ android {
 }
 
 dependencies {
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -47,4 +48,7 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
+    compile project (":java_lib")
+    compile project(":android_lib")
+
 }

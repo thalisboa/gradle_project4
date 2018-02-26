@@ -48,7 +48,6 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
-    compile project (":java_lib")
+    //compile project (":java_lib")
     compile project(":android_lib")
-
 }

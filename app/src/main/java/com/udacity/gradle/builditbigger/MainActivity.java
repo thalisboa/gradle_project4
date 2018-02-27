@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         EndpointsAsyncTask endpoints = new EndpointsAsyncTask();
 
         endpoints.execute(new Pair<Context, String>(this, null));
-        
+
     }
 
     class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
@@ -94,9 +94,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            //setar a piada e chamar activity
-            // Toast.makeText(context, result, Toast.LENGTH_LONG).show();
-            //o botao executara o asynctask
 
             Intent intent = new Intent(MainActivity.this, JokeActivity.class);
             intent.putExtra("joke", result);
